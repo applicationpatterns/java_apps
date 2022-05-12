@@ -1,0 +1,12 @@
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+## gradle
+.gradle
+*/gensrc
+build/
+!gradle/wrapper/gradle-wrapper.jar
