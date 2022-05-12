@@ -1,0 +1,52 @@
+this module compares a list of nested objects
+
+```
+ComparableNode
+    // fields are a map of key value pairs
+    // each key is a string (field name)
+    // each value is either a string or ComparableNode
+    Map<String, Object> fields;
+
+    compareObject(this, base) {
+        for each thisField in this.fields
+            if thisField exists in base.fields 
+                if thisField type != baseFieldType
+                    // thisField type is different from the baseField
+                else if thisField type == string
+                    // both are strings, so lets compare values
+                    if thisField value is same as baseField value
+                        // all good 
+                    else 
+                        // thisField is different from baseField
+                else if thisField type == ComparableNode
+                    compareObject(thisField.value, baseField.value)
+                else 
+                    // unknown field type
+                end if
+            else
+                // thisField is extra (compared to the base)
+        end for
+        for each baseField in base.fields
+            if baseField does not exist in this.fields
+                // this field is missing (compared to the base)
+        end for
+    }
+    
+    // assume list to be ordered the same way
+    compareObjectInOrderedList(thisList, baseList) {
+        for each thisObject in thisList
+            if thisObject does not exist in baseList
+                // thisObject is extra compared to the base
+            else
+                compareObject (thisObject, baseObject)
+            end if 
+        end for
+        for each baseObject in baseList
+            if baseObject does not exist in thisList
+                // thisObject is missing compared to the base
+            end if 
+        end for
+    }
+
+```
+  
