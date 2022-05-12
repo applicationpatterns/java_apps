@@ -7,7 +7,7 @@ import lombok.Data;
 @Builder
 public class ComparableFieldResult {
     String fieldKey;
-    FieldResult fieldResult;
+    CompareResult fieldResult;
     String thisFieldValue;
     String baseFieldValue;
     String notes;
