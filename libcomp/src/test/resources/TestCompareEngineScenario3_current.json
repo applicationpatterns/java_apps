@@ -1,0 +1,36 @@
+[
+  {
+    "customerId": 36,
+    "customerName": "Hungry Coyote Import Store",
+    "contactName": "Yoshi Latimer",
+    "address": "City Center Plaza 516 Main St.",
+    "city": "ElginO",
+    "country": "USA",
+    "orderList": [
+      {
+        "orderId": 3601,
+        "customerId": 36,
+        "date": 1617854400000,
+        "orderItemList": [
+          {
+            "orderItemId": 360101,
+            "orderId": 3601,
+            "customerId": 36,
+            "productId": 1001,
+            "productQty": 11,
+            "product": null
+          },
+          {
+            "orderItemId": 360102,
+            "orderId": 3601,
+            "customerId": 36,
+            "productId": 102,
+            "productQty": 212121,
+            "product": null
+          }
+        ]
+      }
+    ]
+  }
+]
+

@@ -1,4 +1,4 @@
-package org.ap.libcomp.model;
+package org.ap.compare.lib.model;
 
 public enum CompareResult {
     SAME, // value is the same as the base

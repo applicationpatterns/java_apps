@@ -1,4 +1,5 @@
-import org.ap.libcomp.CompareMain;
+
+import org.ap.compare.app.CompareMain;
 import org.junit.jupiter.api.Test;
 
 // this is a library, so I don't think I really need a main

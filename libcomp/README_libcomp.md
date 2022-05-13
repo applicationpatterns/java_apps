@@ -1,4 +1,4 @@
-this module compares a list of nested objects
+this library module compares a list of nested objects
 
 ```
 ComparableNode
@@ -49,4 +49,10 @@ ComparableNode
     }
 
 ```
-  
+References
+
+for reading from JSON or writing to JSON
+https://www.baeldung.com/jackson-object-mapper-tutorial
+
+1234587600000 = 2009-02-14 00:00:00
+

@@ -1,0 +1,132 @@
+[
+  {
+    "customerId": 36,
+    "customerName": "Hungry Coyote Import Store",
+    "contactName": "Yoshi Latimer",
+    "address": "City Center Plaza 516 Main St.",
+    "city": "ElginO",
+    "country": "USA",
+    "orderList": [
+      {
+        "orderId": 3601,
+        "customerId": 36,
+        "date": 1617854400000,
+        "orderItemList": [
+          {
+            "orderItemId": 360101,
+            "orderId": 3601,
+            "customerId": 36,
+            "productId": 1001,
+            "productQty": 11,
+            "product": null
+          },
+          {
+            "orderItemId": 360102,
+            "orderId": 3601,
+            "customerId": 36,
+            "productId": 102,
+            "productQty": 21,
+            "product": null
+          }
+        ]
+      },
+      {
+        "orderId": 3602,
+        "customerId": 36,
+        "date": 1617854400000,
+        "orderItemList": [
+          {
+            "orderItemId": 360201,
+            "orderId": 3602,
+            "customerId": 36,
+            "productId": 201,
+            "productQty": 11,
+            "product": null
+          },
+          {
+            "orderItemId": 360202,
+            "orderId": 3602,
+            "customerId": 36,
+            "productId": 202,
+            "productQty": 21,
+            "product": null
+          },
+          {
+            "orderItemId": 360203,
+            "orderId": 10394,
+            "customerId": 36,
+            "productId": 203,
+            "productQty": 22,
+            "product": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "customerId": 51,
+    "customerName": "Maison Dewey",
+    "contactName": "Catherine Dewey",
+    "address": "Rue Joseph-Bens 532",
+    "city": "Bruxelles",
+    "country": "Belgium",
+    "orderList": [
+      {
+        "orderId": 5101,
+        "customerId": 51,
+        "date": 1617854400000,
+        "orderItemList": [
+          {
+            "orderItemId": 510101,
+            "orderId": 5101,
+            "customerId": 51,
+            "productId": 1001,
+            "productQty": 12,
+            "product": null
+          },
+          {
+            "orderItemId": 510102,
+            "orderId": 5101,
+            "customerId": 51,
+            "productId": 102,
+            "productQty": 22,
+            "product": null
+          }
+        ]
+      },
+      {
+        "orderId": 5102,
+        "customerId": 51,
+        "date": 1617854400000,
+        "orderItemList": [
+          {
+            "orderItemId": 510201,
+            "orderId": 5102,
+            "customerId": 51,
+            "productId": 201,
+            "productQty": 12,
+            "product": null
+          },
+          {
+            "orderItemId": 510202,
+            "orderId": 5102,
+            "customerId": 51,
+            "productId": 202,
+            "productQty": 22,
+            "product": null
+          },
+          {
+            "orderItemId": 510203,
+            "orderId": 10394,
+            "customerId": 51,
+            "productId": 203,
+            "productQty": 32,
+            "product": null
+          }
+        ]
+      }
+    ]
+  }
+
+]
+

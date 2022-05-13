@@ -1,4 +1,4 @@
-package org.ap.libcomp.model;
+package org.ap.compare.lib.model;
 
 import lombok.Builder;
 import lombok.Data;
