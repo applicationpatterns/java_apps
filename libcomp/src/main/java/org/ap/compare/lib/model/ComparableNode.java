@@ -30,7 +30,6 @@ public class ComparableNode {
                 if (thisField == null && baseField == null) {
                     // nothing really to compare, so just skip this
                 } else if (thisField == null && baseField != null) {
-                    // thisField has a different type than baseField
                     fieldResults.add(ComparableFieldResult.builder()
                             .fieldKey(thisFieldKey)
                             .fieldResult(CompareResult.DIFFERENT)
@@ -38,7 +37,6 @@ public class ComparableNode {
                             .baseFieldValue(baseField.toString())
                             .build());
                 } else if (thisField != null && baseField == null) {
-                    // thisField has a different type than baseField
                     fieldResults.add(ComparableFieldResult.builder()
                             .fieldKey(thisFieldKey)
                             .fieldResult(CompareResult.DIFFERENT)
@@ -56,7 +54,7 @@ public class ComparableNode {
                                 .notes("different types " + thisField.getClass().getCanonicalName() + " vs " + baseField.getClass().getCanonicalName())
                                 .build());
                     } else {
-                        if (thisField instanceof String || thisField instanceof Long) {
+                        if (thisField instanceof String || thisField instanceof Long || thisField instanceof Integer) {
                             // both are strings, so lets compare the values
                             if (!thisField.equals(baseField)) {
                                 fieldResults.add(ComparableFieldResult.builder()
@@ -74,11 +72,12 @@ public class ComparableNode {
                             // let's see how long we can ride this
                             List<ComparableNodeResult> comparableNodeResults = ComparableNode.compareList(thisNodeList, baseNodeList);
                             childNodesResultsMap.put(thisFieldKey, comparableNodeResults);
-
                         } else if (thisField instanceof ComparableNode thisFieldObject) {
-                            // TODO compare object
+                            List<ComparableNodeResult> comparableNodeResults = new ArrayList<>();
                             ComparableNode baseFieldObject = (ComparableNode) baseField;
-                            thisFieldObject.compare(baseFieldObject);
+                            ComparableNodeResult nodeResult = thisFieldObject.compare(baseFieldObject);
+                            comparableNodeResults.add(nodeResult);
+                            childNodesResultsMap.put(thisFieldKey, comparableNodeResults);
                         } else if (thisField instanceof Map) {
                             // TODO compare object
                             Map<String, String> thisFieldMap = (Map<String, String>) thisField;

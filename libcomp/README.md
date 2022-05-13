@@ -1,4 +1,30 @@
+# library compare 
 this library module compares a list of nested objects
+
+## Implemented Features
+* Compare features
+  * compare single node
+    * node represents object or row
+    * fields represent attributes or columns
+    * fields are expected to key/value pairs. 
+      * key is of string type representing attribute name or column name
+      * value is of Object type. but actual supported types are
+        * String
+        * Long
+        * Integer
+        * List<ComparableNode>
+        * ComparableNode
+        * Map<String, String>: this represents custom fields of an object/row
+  * compare list of nodes
+  * compare node with nested/child list of nodes
+  * compare node with a field whose value 
+
+
+## Backlog
+* compare node with nested/child node
+
+
+## Pseudo code
 
 ```
 ComparableNode
@@ -49,10 +75,9 @@ ComparableNode
     }
 
 ```
-References
+## References
 
-for reading from JSON or writing to JSON
-https://www.baeldung.com/jackson-object-mapper-tutorial
+* for reading from JSON or writing to JSON [baeldung json tutorial](https://www.baeldung.com/jackson-object-mapper-tutorial)
 
 1234587600000 = 2009-02-14 00:00:00
 
